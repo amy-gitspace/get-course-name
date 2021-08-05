@@ -1,0 +1,11 @@
+import requests
+from bs4 import BeautifulSoup
+url='https://realpython.github.io/fake-jobs/'
+request1=requests.get(url)
+soup=BeautifulSoup(request1.text,'html.parser')
+quotes1=soup.find_all('h2',class_="title is-5")
+for item in quotes1:
+    print(item.text)
+    
+#output like Senior Python Developer
+            Energy engineer
