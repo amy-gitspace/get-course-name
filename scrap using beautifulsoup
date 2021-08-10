@@ -7,5 +7,4 @@ quotes1=soup.find_all('h2',class_="title is-5")
 for item in quotes1:
     print(item.text)
     
-#output like Senior Python Developer
-            Energy engineer
+#output like 'Senior Python Developer','Energy engineer'
